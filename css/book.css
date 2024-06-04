@@ -1,24 +1,27 @@
 body {
-    background-color: #FFC684;
-  }
-  .info-box {
-  position: fixed;
-  top: 9rem;
-  right: 2rem;
-  width: 26rem;
-  padding: 1rem;
   background-color: #FFC684;
+}
+
+.grid-container {
+  display: grid;
+  grid-gap: 20px;
+  padding: 20px;
+}
+
+.info-box {
+  background-color: #FFC684;
+  padding: 1rem;
   border: 1px solid #ccc;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   line-height: 3;
   border-radius: 10px;
+  
 }
 
 .info-box h2 {
   font-size: 1.5rem;
   margin-top: 0;
   text-align: center;
-  
 }
 
 .info-box p {
@@ -29,44 +32,48 @@ body {
 }
 
 .container {
-    display: grid;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 20px;
+  padding: 20px;
+}
+
+.box {
+  background-color: #FFC684;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  font-size: 14px;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.Meddelse-box {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.wide-box {
+  width: 100%;
+  background-color: #FFC684;
+  padding: 20px;
+  box-sizing: border-box;
+  border-radius: 10px;
+  margin-top: 30px;
+}
+
+/* Media query for larger screens */
+@media (min-width: 769px) {
+ .grid-container {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+ .grid-container {
     grid-template-columns: 1fr;
-    grid-gap: 50px;
-    grid-auto-rows: minmax(50px, auto);
-    padding-right: 500px;
-   padding-left: 20px;
-   margin-top: 100px;
-   
   }
-  
-  .box {
-    background-color:#FFC684;
-    display: flex;
-    align-items: center;
-    justify-content: left;
-    font-size: 14px;
-    border-radius: 10px;
-  }
-  
-  @media (min-width: 500px) {
-    .container {
-      grid-template-columns: repeat(2, 1fr);
-    }
-  }
-  .Meddelse-box {
-    display: flex;
-    flex-wrap: nowrap;
-    width: 100%;
-    margin-top: 20px; 
-    margin-left: 70px;
-    
-  }
-  
-  .wide-box {
-    width: calc(50% - 10px); 
-    background-color: #FFC684; 
-    padding: 20px; 
-    box-sizing: border-box; 
-    border-radius: 10px;
-    margin-top: 30px;
-  }
+}

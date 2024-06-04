@@ -5,6 +5,8 @@
     justify-content: center;
     align-items: center;
     height: 100vh;
+
+
     
     
 }
@@ -25,6 +27,11 @@
 }
 .image-box {
     background-color: #FFC684;
+    display: flex;
+    align-items: center;
+    position: relative;
+    height: auto;
+    overflow: hidden;
 }
 .image-box img {
     width: 100%;
@@ -39,3 +46,98 @@
 .info-box h1 {
     text-align: center;
 }
+
+.image-box .pil {
+    position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+   
+}
+
+.image-box .daase{
+    width: 100%;
+    height: auto;
+}
+
+.dot-container {
+    position: absolute;
+    bottom: 10px; 
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+  }
+  
+  .active,
+  .dot:hover {
+    background-color: #717171;
+  }
+  
+  .dot-container {
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+  }
+
+@media only screen and (max-width: 768px) {
+    /* Make the container full-width */
+   .container {
+      flex-direction: column;
+      height: auto;
+      padding: 20px;
+    }
+  
+    /* Adjust the box widths and margins */
+   .box {
+      width: 90%;
+      margin: 10px;
+    }
+  
+    /* Make the image box full-width */
+   .image-box {
+      width: 100%;
+    }
+  
+    /* Adjust the image size */
+   .image-box img {
+      width: 100%;
+      height: auto;
+    }
+  
+    /* Hide the dropdown menu on mobile */
+   .dropdown_menu {
+      display: none;
+    }
+  
+    /* Show the toggle button on mobile */
+   .toggle_btn {
+      display: block;
+    }
+  }
+  
+  /* For smaller mobile devices (max-width: 480px) */
+  @media only screen and (max-width: 480px) {
+    /* Make the font size smaller */
+   .info-box p {
+      font-size: 16px;
+    }
+  
+   .info-box h1 {
+      font-size: 24px;
+    }
+  }
+

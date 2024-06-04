@@ -6,16 +6,17 @@
     <link rel="stylesheet" href="/css/book.css">
     <link rel="stylesheet" href="/css/global.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
     <title>Booking side til ZBB</title>
 </head>
 <body>
   <header>
-    <div class="navbar">
-      <div class="logo"><a href="#">Zero Buzz Brew</a></div>
+    <nav class="navbar">
+      <section class="logo"><a href="index.html">Zero Buzz Brew</a> <p>sammenhold & fællesskab</p></section>
       <ul class="links">
-        <li><a href="Vores Øl">Vores Øl</a></li>
-        <li><a href="Arrangmenter">Arrangementer</a></li>
-        <li><a href="Book">Book</a></li>
+        <li><a href="voresoel.html">Vores Øl</a></li>
+        <li><a href="arrangmenter.html">Arrangementer</a></li>
+        <li><a href="book.html">Book</a></li>
         <li><a href="Om os">Om os</a></li>
       </ul>
       <a href="#" class="action_btn">Socials</a>
@@ -24,14 +25,14 @@
       <i class="fa-solid fa-bars"></i>
      </button>
 
-     <div class="dropdown_menu">
-      <li><a href="Vores Øl">Vores Øl</a></li>
-        <li><a href="Arrangmenter">Arrangementer</a></li>
-        <li><a href="Book">Book</a></li>
+     <ul class="dropdown_menu">
+      <li><a href="voresoel.html">Vores Øl</a></li>
+        <li><a href="arrangmenter.html">Arrangementer</a></li>
+        <li><a href="book.html">Book</a></li>
         <li><a href="Om os">Om os</a></li>
         <li><a href="#" class="action_btn">Socials</a></li>
-     </div>
-    </div>
+     </ul>
+    </nav>
   </header>
 
 
@@ -51,27 +52,27 @@ toggleBtn.onclick = function () {
 }
 </script>
 
-        <div class="info-box">
-            <h2>Information</h2>
-            <p>Åbningstider</p>
-            <p>Man-tors 13:00-24:00</p>
-            <p>fre-lør 13:00-02:00</p>
-            <p>søn 13:00-24:00</p>
-            <h2>Kontaktinfo</h2>
-            <p>Åboulevarden 18 8000, Aarhus C</p>
-            <p>kontak@ZBB.dk</p>
-            <p>+45 12345678</p>
-            </div>
-            <div class="container">
-                <div class="box">Navn</div>
-                <div class="box">Email</div>
-                <div class="box">Telefonnummer</div>
-                <div class="box">Antal Personer</div>
-                <div class="box">Dato</div>
-                <div class="box">Ankomst tidspunkt</div>
-              </div>
-              <div class="Meddelse-box">
-                <div class="wide-box">Meddelse</div>
-              </div>
+<section class="grid-container">
+  <aside class="info-box">
+    <h2>Information</h2>
+    <p>Åbningstider</p>
+    <p>Man-tors 13:00-24:00</p>
+    <p>fre-lør 13:00-02:00</p>
+    <p>søn 13:00-24:00</p>
+    <h2>Kontaktinfo</h2>
+    <p>Åboulevarden 18 8000, Aarhus C</p>
+    <p>kontak@ZBB.dk</p>
+    <p>+45 12345678</p>
+  </aside>
+  <section class="container">
+    <article class="box">Navn</article>
+    <article class="box">Email</article>
+    <article class="box">Telefonnummer</article>
+    <article class="box">Antal Personer</article>
+    <article class="box">Dato</article>
+    <article class="box">Ankomst tidspunkt</article>
+    <article class="box">Meddelse</article>
+  </section>
+</section>
 </body>
 </html>

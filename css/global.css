@@ -47,6 +47,12 @@ a:hover{
   font-weight: bold;
 
 }
+.navbar .logo p{
+  color: #FFE4C4;
+  margin-left: 30px;
+  font-size: 14px;
+
+}
 
 .navbar .links{
   display: flex;
