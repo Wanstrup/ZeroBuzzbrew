@@ -2,7 +2,7 @@ body {
     background-color: #FFD700;
     font-family: 'Poppins', sans-serif;
   }
-  
+  /* herunder styles de forskellige container, billede og tekst, med centering, bredde, højde, margin og padding*/
   .container {
     display: flex;
     flex-wrap: wrap;
@@ -41,7 +41,10 @@ body {
   p {
     font-size: 1rem;
     line-height: 1.5;
+    margin: 10px;
   }
+
+  /*her under styles mine "book nu" knapper, med farve, badding, font størrelse */
   .button:hover {
     background-color: #fff;
   }
@@ -60,6 +63,8 @@ body {
     padding: 0.9375rem 1.875rem;
     font-size: 1.25rem;
   }
+
+  /* herunder styles mit layout på hjemmesiden, når bredden på skærmen ændres, ændres bredden på boxne*/
 
   @media (min-width: 768px) {
     .box {

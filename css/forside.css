@@ -1,12 +1,13 @@
-  body {
+  body { /*her styles fonten og farven på body*/
     background-color: #FFC684;
+    font-family: 'Poppins', sans-serif;
   }
 
-  .logo {
+  .logo { /* her styles højden og bredden på logoet*/
     width: 50px;
     height: auto;
   }
-  .container {
+  .container { /*her styles min container på min forside, med postion*/
     position: absolute;
     top: 50%;
     left: 50%;

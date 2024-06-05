@@ -1,5 +1,6 @@
 body {
   background-color: #FFC684;
+  font-family: 'Poppins', sans-serif;
 }
 
 .grid-container {
@@ -64,14 +65,15 @@ body {
   margin-top: 30px;
 }
 
-/* Media query for larger screens */
+/* her under bruger jeg media til, layoutet, når man er henholdsvis på en computerskærm og en mobilskærm*/
+
 @media (min-width: 769px) {
  .grid-container {
     grid-template-columns: 1fr 1fr;
   }
 }
 
-/* Media query for smaller screens */
+
 @media (max-width: 768px) {
  .grid-container {
     grid-template-columns: 1fr;

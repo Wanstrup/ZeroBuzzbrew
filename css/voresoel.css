@@ -1,3 +1,9 @@
+.body{
+    font-family: 'Poppins', sans-serif; /*ændre fonten til poppins*/
+}
+
+/*her under styles mine kasser, teksten i kasserne, højde, bredde, margin, padding, centering og position*/
+
 .container {
     display: flex;
     grid-template-columns: 1fr 1fr;
@@ -5,9 +11,7 @@
     justify-content: center;
     align-items: center;
     height: 100vh;
-
-
-    
+ 
     
 }
 .box {
@@ -60,6 +64,8 @@
     height: auto;
 }
 
+/* Her under styles, mine dots under øl dåsen, med centering, postion, margin, padding, og når man holder over en af prikkerne bliver farven mørkere*/
+
 .dot-container {
     position: absolute;
     bottom: 10px; 
@@ -93,45 +99,48 @@
     justify-content: center;
   }
 
+/* her under styles min hjemmeside, når max-bredden på skærmen er 768px, det styles med højde, bredde, margin og padding*/
+
 @media only screen and (max-width: 768px) {
-    /* Make the container full-width */
+   
    .container {
       flex-direction: column;
       height: auto;
       padding: 20px;
     }
   
-    /* Adjust the box widths and margins */
+  
    .box {
       width: 90%;
       margin: 10px;
     }
   
-    /* Make the image box full-width */
+    
    .image-box {
       width: 100%;
     }
   
-    /* Adjust the image size */
+   
    .image-box img {
       width: 100%;
       height: auto;
     }
   
-    /* Hide the dropdown menu on mobile */
+   
    .dropdown_menu {
       display: none;
     }
   
-    /* Show the toggle button on mobile */
+    
    .toggle_btn {
       display: block;
     }
   }
   
-  /* For smaller mobile devices (max-width: 480px) */
+  /*her styles hjemmesiden, mar max-bredden på skærmen er 480px*/
+
   @media only screen and (max-width: 480px) {
-    /* Make the font size smaller */
+   
    .info-box p {
       font-size: 16px;
     }
